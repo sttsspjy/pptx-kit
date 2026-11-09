@@ -48,6 +48,7 @@ Paths inside content are relative to the content folder. Text language = `meta.l
 ## Rules
 
 - **Fidelity: never change a number, label, name or quote from the content.** If the content looks inconsistent (totals that do not add up, a label that contradicts a number, the same figure given twice differently), keep it as given and flag it in `REPORT.md` → Content inconsistencies.
+- Text that belongs to the source deck, not the design (copyright or legal lines, company, client or product names, section names, sample breadcrumbs), never carries over: fill it from the content or leave the slot out.
 - Do not invent findings, numbers, quotes, names or pictures. Picture slots without a matching picture → choose a layout without that slot.
 - Quotes stay verbatim with their speaker / session attribution in the deck's attribution format; a quote too long for a slot gets a layout with more room or its own slide — never a rewrite.
 - Headlines and bullets may be shortened only by deleting words; never reword a claim into a stronger or different one.

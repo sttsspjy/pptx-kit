@@ -26,3 +26,4 @@ A set of slide templates was rebuilt one slide at a time from a source deck (`<p
 - Measured values come from the layouts' SPEC.md files, facts (`facts/sNN.json`) and source renders; resolve disagreements against the source.
 - Paths in pack code are pack-relative complete string literals (`'facts/media/<file>'`, no computed file names — prune keeps only referenced media); pack code imports no npm packages (`ctx.deps`).
 - Finish: `node "${CLAUDE_PLUGIN_ROOT}/tools/pack.mjs" check "<pack>"` and fix every error. Then reply with: component list, demo render verdict, anything unresolved.
+- Source-specific text (copyright or legal lines, company, client or product names, section names) is never pack default: chrome and samples take it as data, and `DESIGN.md` says where it must come from.
