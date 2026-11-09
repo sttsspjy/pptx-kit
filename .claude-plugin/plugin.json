@@ -1,0 +1,8 @@
+{
+  "name": "pptx-kit",
+  "displayName": "pptx-kit",
+  "version": "0.1.0",
+  "description": "Extract a team's PowerPoint design into a shareable design pack, then generate, review and finish decks in that design — locally, with your own Claude Code subscription. Windows + desktop PowerPoint.",
+  "author": { "name": "sttsspjy" },
+  "keywords": ["powerpoint", "pptx", "slides", "design-system", "pptxgenjs"]
+}

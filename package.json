@@ -1,0 +1,14 @@
+{
+  "name": "pptx-kit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Bundled CLIs for the pptx-kit Claude Code plugin",
+  "type": "module",
+  "license": "UNLICENSED",
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "image-size": "1.2.1",
+    "jszip": "3.10.2",
+    "pptxgenjs": "4.0.1"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "pptx-kit-local",
+  "owner": {
+    "name": "sttsspjy"
+  },
+  "description": "Local marketplace for the pptx-kit plugin (install from this folder).",
+  "plugins": [
+    {
+      "name": "pptx-kit",
+      "source": "./",
+      "description": "Design-pack extraction and deck generation for PowerPoint"
+    }
+  ]
+}
