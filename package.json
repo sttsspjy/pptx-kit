@@ -4,8 +4,10 @@
   "private": true,
   "description": "Bundled CLIs for the pptx-kit Claude Code plugin",
   "type": "module",
-  "license": "UNLICENSED",
-  "engines": { "node": ">=20" },
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
   "dependencies": {
     "image-size": "1.2.1",
     "jszip": "3.10.2",

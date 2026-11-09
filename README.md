@@ -19,14 +19,14 @@ All model work runs in your own Claude Code session on your own subscription. Th
 
 Pick one:
 
-- **Install from this folder (persistent)** — in your shell:
-  1. `claude plugin marketplace add C:\path\to\pptx-kit`
-  2. `claude plugin install pptx-kit@pptx-kit-local`
+- **From GitHub (persistent)** — in your shell:
+  1. `claude plugin marketplace add sttsspjy/pptx-kit`
+  2. `claude plugin install pptx-kit@pptx-kit`
   3. Start Claude Code and run `/pptx-kit:setup`.
+- **From a local clone** — `claude plugin marketplace add C:\path\to\pptx-kit`, then steps 2–3.
 - **One session** — `claude --plugin-dir C:\path\to\pptx-kit`, then `/pptx-kit:setup`.
-- **Every session without a marketplace** — move the folder under `%USERPROFILE%\.claude\skills\` and restart Claude Code.
 
-A local-folder marketplace loads the plugin in place and does not install Node packages for you: `/pptx-kit:setup` runs `npm ci` in the plugin folder the first time.
+Installing does not fetch Node or Python packages: `/pptx-kit:setup` runs `npm ci` in the plugin folder and `pip install --user -r requirements.txt` the first time.
 
 ## Use
 
@@ -62,6 +62,10 @@ Everything runs on your PC inside your Claude Code session: the source deck, the
 
 `tools/` holds the CLIs the skills call (each prints one JSON line): `intake.mjs`, `render.mjs`, `render-deck.mjs`, `pack.mjs` (check / prune), `doctor.mjs`, `facts.py`, `compare.py`, `crop.py`, `sheet.py`, `imginfo.py`, `fonts.py`, `pp-export.ps1`. Smoke test: `node test/make-sample-deck.mjs work/sample.pptx` then `node tools/intake.mjs --src work/sample.pptx --pack work/pack`.
 
+## Status
+
+0.1 preview. `generate` and the CLIs are tested; `extract` and `review` have not yet been run end to end on a full deck. Issues and pull requests are welcome.
+
 ## Licence
 
-No licence file yet — add one before distributing outside the team.
+MIT — see [LICENSE](LICENSE).

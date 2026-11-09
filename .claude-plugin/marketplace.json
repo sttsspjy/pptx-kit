@@ -1,9 +1,9 @@
 {
-  "name": "pptx-kit-local",
+  "name": "pptx-kit",
   "owner": {
     "name": "sttsspjy"
   },
-  "description": "Local marketplace for the pptx-kit plugin (install from this folder).",
+  "description": "pptx-kit: PowerPoint design-pack extraction and deck generation for Claude Code",
   "plugins": [
     {
       "name": "pptx-kit",
